@@ -1,0 +1,1431 @@
+<!DOCTYPE html>
+<!-- saved from url=(0091)https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html -->
+<html lang="zh-hans"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        
+        <title>基础 · 千锋大前端小册-GP19-Node.js</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="古艺散人">
+        
+        
+    
+    <link rel="stylesheet" href="./基础 · 千锋大前端小册-GP19-Node.js_files/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="./基础 · 千锋大前端小册-GP19-Node.js_files/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="./基础 · 千锋大前端小册-GP19-Node.js_files/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="./基础 · 千锋大前端小册-GP19-Node.js_files/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="./基础 · 千锋大前端小册-GP19-Node.js_files/plugin(1).css">
+                
+            
+                
+                <link rel="stylesheet" href="./基础 · 千锋大前端小册-GP19-Node.js_files/plugin(2).css">
+                
+            
+                
+                <link rel="stylesheet" href="./基础 · 千锋大前端小册-GP19-Node.js_files/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="./基础 · 千锋大前端小册-GP19-Node.js_files/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="./基础 · 千锋大前端小册-GP19-Node.js_files/website(1).css">
+                
+            
+        
+
+    
+
+    
+        
+    
+
+        
+    
+    
+    
+    
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    
+    
+    
+    
+
+    
+        <link rel="shortcut icon" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/source/images/favicon.jpg" type="image/x-icon">
+    
+    
+        <link rel="bookmark" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/source/images/favicon.jpg" type="image/x-icon">
+    
+    
+        <link rel="apple-touch-icon" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/source/images/apple-touch-icon.jpg">
+    
+    
+        
+        <link rel="apple-touch-icon" sizes="120x120" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/source/images/apple-touch-icon.jpg">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/source/images/apple-touch-icon.jpg">
+        
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"lurongtao","repo":"felixbooks-kbone","type":"star","size":"small","count":true}]};
+    </script>
+
+    <link rel="prev" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/"><link rel="next" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html"></head>
+    <body>
+        
+<div class="book without-animation with-summary font-size-2 font-family-1">
+    <div class="book-summary" style="width: 300px; left: 0px; position: absolute;">
+        
+            
+<div class="book-logo"><img src="./基础 · 千锋大前端小册-GP19-Node.js_files/node.js.jpg" style="background: skyblue; width: 100%; height: 100%;"></div><div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索">
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active expanded" data-level="1.2" data-path="01-Node.js基础.html">
+            
+                <a href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html">
+            
+                    
+                    基础
+            
+                <i class="exc-trigger fa"></i></a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active expanded" data-level="1.2.1" data-path="01-Node.js基础.html">
+            
+                <a href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html">
+            
+                    
+                    01-Node.js基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter expanded" data-level="1.2.2" data-path="02-yarn.html">
+            
+                <a href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/02-yarn.html">
+            
+                    
+                    02-Yarn入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter expanded" data-level="1.2.3" data-path="03-Express.html">
+            
+                <a href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/03-Express.html">
+            
+                    
+                    03-Express
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter expanded" data-level="1.2.4" data-path="04-Koa2.html">
+            
+                <a href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/04-Koa2.html">
+            
+                    
+                    04-Koa2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter expanded" data-level="1.2.5" data-path="05-MongoDB.html">
+            
+                <a href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/05-MongoDB.html">
+            
+                    
+                    05-MongoDB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter expanded" data-level="1.2.6" data-path="06-socket.html">
+            
+                <a href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/06-socket.html">
+            
+                    
+                    06-socket编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter expanded" data-level="1.3" data-path="../advanced/01-Node中间件.html">
+            
+                <a href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/advanced/01-Node%E4%B8%AD%E9%97%B4%E4%BB%B6.html">
+            
+                    
+                    高级
+            
+                <i class="exc-trigger fa"></i></a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../advanced/01-Node中间件.html">
+            
+                <a href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/advanced/01-Node%E4%B8%AD%E9%97%B4%E4%BB%B6.html">
+            
+                    
+                    01-Node中间件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter expanded" data-level="1.3.2" data-path="../advanced/02-Node事件循环.html">
+            
+                <a href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/advanced/02-Node%E4%BA%8B%E4%BB%B6%E5%BE%AA%E7%8E%AF.html">
+            
+                    
+                    02-Node事件循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter expanded" data-level="1.3.3" data-path="../advanced/03-Node中间层.html">
+            
+                <a href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/advanced/03-Node%E4%B8%AD%E9%97%B4%E5%B1%82.html">
+            
+                    
+                    03-Node中间层
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../thanks/">
+            
+                <a href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/thanks/">
+            
+                    
+                    感谢
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com/" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    <div class="divider-content-summary"><div class="divider-content-summary__icon"><i class="fa fa-ellipsis-v"></i></div></div></div>
+
+    <div class="book-body" style="left: 300px; position: absolute;">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <a class="btn pull-left js-toolbar-action" aria-label="" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#"><i class="fa fa-align-justify"></i></a><a class="btn pull-right js-toolbar-action" aria-label="GitHub" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#"><i class="fa fa-github"></i></a><div class="dropdown pull-right js-toolbar-action"><a class="btn toggle-dropdown" aria-label="Share" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#"><i class="fa fa-share-alt"></i></a><div class="dropdown-menu dropdown-left"><div class="dropdown-caret"><span class="caret-outer"></span><span class="caret-inner"></span></div><div class="buttons"><button class="button size-8 ">Google+</button><button class="button size-8 ">Facebook</button><button class="button size-8 ">新浪微博</button><button class="button size-8 ">Twitter</button><button class="button size-8 ">QQ</button><button class="button size-8 ">QQ空间</button><button class="button size-8 ">Linkedin</button><button class="button size-8 ">Pocket</button></div></div></div><div class="dropdown pull-left font-settings js-toolbar-action"><a class="btn toggle-dropdown" aria-label="Font Settings" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#"><i class="fa fa-font"></i></a><div class="dropdown-menu dropdown-right"><div class="dropdown-caret"><span class="caret-outer"></span><span class="caret-inner"></span></div><div class="buttons"><button class="button size-2 font-reduce">A</button><button class="button size-2 font-enlarge">A</button></div><div class="buttons"><button class="button size-2 ">Serif</button><button class="button size-2 ">Sans</button></div><div class="buttons"><button class="button size-3 ">White</button><button class="button size-3 ">Sepia</button><button class="button size-3 ">Night</button></div></div></div><a class="btn pull-right hidden-mobile" aria-label="github">
+            <iframe style="display:inline-block;vertical-align:middle;" src="./基础 · 千锋大前端小册-GP19-Node.js_files/github-btn.html" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
+        </a><h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/">基础</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#%E4%B8%80%E3%80%81nodejs%E6%98%AF%E4%BB%80%E4%B9%88"><b></b>一、Node.js是什么</a></li><ul><ul><li><span class="title-icon "></span><a href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#1%E3%80%81%E7%89%B9%E6%80%A7"><b></b>1、特性</a></li><li><span class="title-icon "></span><a href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#2%E3%80%81%E4%B8%BE%E4%BE%8B"><b></b>2、举例</a></li></ul></ul><li><span class="title-icon "></span><a href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#%E4%BA%8C%E3%80%81node-%E7%9B%B8%E5%85%B3%E5%B7%A5%E5%85%B7"><b></b>二、Node 相关工具</a></li><ul><ul><li><span class="title-icon "></span><a href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#1%E3%80%81nvm-node-version-manager"><b></b>1、NVM: Node Version Manager</a></li><li><span class="title-icon "></span><a href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#2%E3%80%81npm-node-package-manager"><b></b>2、NPM: Node Package Manager</a></li><li><span class="title-icon "></span><a href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#3%E3%80%81nrm-npm-registry-manager"><b></b>3、NRM: npm registry manager</a></li><li><span class="title-icon "></span><a href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#4%E3%80%81npx-npm-package-extention"><b></b>4、NPX: npm package extention</a></li></ul></ul><li><span class="title-icon "></span><a href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#%E4%B8%89%E3%80%81%E6%A8%A1%E5%9D%97%E5%8C%85-%E4%B8%8E-commonjs"><b></b>三、模块/包 与 CommonJS</a></li><ul><ul><li><span class="title-icon "></span><a href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#1%E3%80%81%E6%A8%A1%E5%9D%97%E5%8C%85%E5%88%86%E7%B1%BB"><b></b>1、模块/包分类</a></li></ul></ul><li><span class="title-icon "></span><a href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#%E5%9B%9B%E3%80%81%E5%B8%B8%E7%94%A8%E5%86%85%E7%BD%AE%E6%A8%A1%E5%9D%97"><b></b>四、常用内置模块</a></li><ul><ul><li><span class="title-icon "></span><a href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#1%E3%80%81url"><b></b>1、url</a></li><li><span class="title-icon "></span><a href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#2%E3%80%81querystring"><b></b>2、querystring</a></li><li><span class="title-icon "></span><a href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#3%E3%80%81httphttps"><b></b>3、http/https</a></li><li><span class="title-icon "></span><a href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#4%E3%80%81events"><b></b>4、Events</a></li><li><span class="title-icon "></span><a href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#5%E3%80%81file-system"><b></b>5、File System</a></li><li><span class="title-icon "></span><a href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#6%E3%80%81stream"><b></b>6、Stream</a></li><li><span class="title-icon "></span><a href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#7%E3%80%81zlib"><b></b>7、Zlib</a></li><li><span class="title-icon "></span><a href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#8%E3%80%81readline"><b></b>8、ReadLine</a></li><li><span class="title-icon "></span><a href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#9%E3%80%81crypto"><b></b>9、Crypto</a></li></ul></ul><li><span class="title-icon "></span><a href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#%E5%9B%9B%E3%80%81%E8%B7%AF%E7%94%B1"><b></b>四、路由</a></li><li><span class="title-icon "></span><a href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#%E4%BA%94%E3%80%81%E9%9D%99%E6%80%81%E8%B5%84%E6%BA%90%E6%9C%8D%E5%8A%A1"><b></b>五、静态资源服务</a></li><ul><ul><li><span class="title-icon "></span><a href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#51-readstaticfile"><b></b>5.1 readStaticFile</a></li><li><span class="title-icon "></span><a href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#52-server"><b></b>5.2 server</a></li><li><span class="title-icon "></span><a href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#53-%E6%9C%80%E7%BB%88%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84"><b></b>5.3 最终目录结构</a></li></ul></ul></ul></div><a href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#%E4%B8%80%E3%80%81nodejs%E6%98%AF%E4%BB%80%E4%B9%88" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="一、nodejs是什么"><a name="一、nodejs是什么" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#%E4%B8%80%E3%80%81nodejs%E6%98%AF%E4%BB%80%E4%B9%88"><i class="fa fa-link" aria-hidden="true"></i></a><a name="一、nodejs是什么" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#%E4%B8%80%E3%80%81nodejs%E6%98%AF%E4%BB%80%E4%B9%88"><i class="fa fa-link" aria-hidden="true"></i></a>一、Node.js是什么</h1>
+<p>Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine.</p>
+<h3 id="1、特性"><a name="1、特性" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#1%E3%80%81%E7%89%B9%E6%80%A7"><i class="fa fa-link" aria-hidden="true"></i></a><a name="1、特性" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#1%E3%80%81%E7%89%B9%E6%80%A7"><i class="fa fa-link" aria-hidden="true"></i></a>1、特性</h3>
+<p>Node.js 可以解析JS代码（没有浏览器安全级别的限制）提供很多系统级别的API，如：</p>
+<ul>
+<li>文件的读写 (File System)</li>
+<li>进程的管理 (Process)</li>
+<li>网络通信 (HTTP/HTTPS)</li>
+<li>……</li>
+</ul>
+<h3 id="2、举例"><a name="2、举例" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#2%E3%80%81%E4%B8%BE%E4%BE%8B"><i class="fa fa-link" aria-hidden="true"></i></a><a name="2、举例" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#2%E3%80%81%E4%B8%BE%E4%BE%8B"><i class="fa fa-link" aria-hidden="true"></i></a>2、举例</h3>
+<h4 id="21-浏览器安全级别的限制"><a name="21-浏览器安全级别的限制" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#21-%E6%B5%8F%E8%A7%88%E5%99%A8%E5%AE%89%E5%85%A8%E7%BA%A7%E5%88%AB%E7%9A%84%E9%99%90%E5%88%B6"><i class="fa fa-link" aria-hidden="true"></i></a><a name="21-浏览器安全级别的限制" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#21-%E6%B5%8F%E8%A7%88%E5%99%A8%E5%AE%89%E5%85%A8%E7%BA%A7%E5%88%AB%E7%9A%84%E9%99%90%E5%88%B6"><i class="fa fa-link" aria-hidden="true"></i></a>2.1 浏览器安全级别的限制</h4>
+<p><strong>Ajax测试</strong></p>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1.0"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>browser-safe-sandbox<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>browser-safe-sandbox<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
+    <span class="hljs-keyword">const</span> xhr = <span class="hljs-keyword">new</span> XMLHttpRequest()
+    xhr.open(<span class="hljs-string">'get'</span>, <span class="hljs-string">'https://m.maoyan.com/ajax/moreClassicList?sortId=1&amp;showType=3&amp;limit=10&amp;offset=30&amp;optimus_uuid=A5518FF0AFEC11EAAB158D7AB0D05BBBD74C9789D9F649898982E6542C7DD479&amp;optimus_risk_level=71&amp;optimus_code=10'</span>, <span class="hljs-literal">false</span>)
+    xhr.send()
+  </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<p><strong>浏览器预览</strong></p>
+<pre><code>browser-sync start --server --files **/* --directory
+</code></pre><h4 id="22-文件的读写-file-system"><a name="22-文件的读写-file-system" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#22-%E6%96%87%E4%BB%B6%E7%9A%84%E8%AF%BB%E5%86%99-file-system"><i class="fa fa-link" aria-hidden="true"></i></a><a name="22-文件的读写-file-system" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#22-%E6%96%87%E4%BB%B6%E7%9A%84%E8%AF%BB%E5%86%99-file-system"><i class="fa fa-link" aria-hidden="true"></i></a>2.2 文件的读写 (File System)</h4>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">'fs'</span>)
+
+fs.readFile(<span class="hljs-string">'./ajax.png'</span>, <span class="hljs-string">'utf-8'</span>, (err, content) =&gt; {
+  <span class="hljs-built_in">console</span>.log(content)
+})
+</code></pre>
+<h4 id="23-进程的管理（process）"><a name="23-进程的管理（process）" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#23-%E8%BF%9B%E7%A8%8B%E7%9A%84%E7%AE%A1%E7%90%86%EF%BC%88process%EF%BC%89"><i class="fa fa-link" aria-hidden="true"></i></a><a name="23-进程的管理（process）" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#23-%E8%BF%9B%E7%A8%8B%E7%9A%84%E7%AE%A1%E7%90%86%EF%BC%88process%EF%BC%89"><i class="fa fa-link" aria-hidden="true"></i></a>2.3 进程的管理（Process）</h4>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params">argv</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(argv)
+}
+
+main(process.argv.slice(<span class="hljs-number">2</span>))
+</code></pre>
+<p><strong>运行</strong></p>
+<pre><code>node 2.3-process.js argv1 argv2
+</code></pre><h4 id="24-网络通信（httphttps）"><a name="24-网络通信（httphttps）" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#24-%E7%BD%91%E7%BB%9C%E9%80%9A%E4%BF%A1%EF%BC%88httphttps%EF%BC%89"><i class="fa fa-link" aria-hidden="true"></i></a><a name="24-网络通信（httphttps）" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#24-%E7%BD%91%E7%BB%9C%E9%80%9A%E4%BF%A1%EF%BC%88httphttps%EF%BC%89"><i class="fa fa-link" aria-hidden="true"></i></a>2.4 网络通信（HTTP/HTTPS）</h4>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> http = <span class="hljs-built_in">require</span>(<span class="hljs-string">"http"</span>)
+
+http.createServer((req,res) =&gt; {
+  res.writeHead(<span class="hljs-number">200</span>, {
+    <span class="hljs-string">"content-type"</span>: <span class="hljs-string">"text/plain"</span>
+  })
+  res.write(<span class="hljs-string">"hello nodejs"</span>)
+  res.end()
+}).listen(<span class="hljs-number">3000</span>)
+</code></pre>
+<h1 id="二、node-相关工具"><a name="二、node-相关工具" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#%E4%BA%8C%E3%80%81node-%E7%9B%B8%E5%85%B3%E5%B7%A5%E5%85%B7"><i class="fa fa-link" aria-hidden="true"></i></a><a name="二、node-相关工具" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#%E4%BA%8C%E3%80%81node-%E7%9B%B8%E5%85%B3%E5%B7%A5%E5%85%B7"><i class="fa fa-link" aria-hidden="true"></i></a>二、Node 相关工具</h1>
+<h3 id="1、nvm-node-version-manager"><a name="1、nvm-node-version-manager" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#1%E3%80%81nvm-node-version-manager"><i class="fa fa-link" aria-hidden="true"></i></a><a name="1、nvm-node-version-manager" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#1%E3%80%81nvm-node-version-manager"><i class="fa fa-link" aria-hidden="true"></i></a>1、NVM: Node Version Manager</h3>
+<p><strong>1.1 Mac 安装 nvm</strong></p>
+<pre><code>https://github.com/nvm-sh/nvm/blob/master/README.md
+</code></pre><p><strong>1.2 Windows 安装 nvm</strong></p>
+<pre><code>nvm-windows
+nodist
+</code></pre><h3 id="2、npm-node-package-manager"><a name="2、npm-node-package-manager" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#2%E3%80%81npm-node-package-manager"><i class="fa fa-link" aria-hidden="true"></i></a><a name="2、npm-node-package-manager" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#2%E3%80%81npm-node-package-manager"><i class="fa fa-link" aria-hidden="true"></i></a>2、NPM: Node Package Manager</h3>
+<h4 id="21-全局安装package"><a name="21-全局安装package" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#21-%E5%85%A8%E5%B1%80%E5%AE%89%E8%A3%85package"><i class="fa fa-link" aria-hidden="true"></i></a><a name="21-全局安装package" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#21-%E5%85%A8%E5%B1%80%E5%AE%89%E8%A3%85package"><i class="fa fa-link" aria-hidden="true"></i></a>2.1 全局安装package</h4>
+<pre><code>$ npm install forever --global (-g)
+$ forever
+$ npm uninstall forever --global
+$ forever
+</code></pre><p><strong>全局安装包的目录</strong></p>
+<ul>
+<li>Mac<pre><code>/Users/felix/.nvm/versions/node/nvm各个版本/bin/
+</code></pre></li>
+<li>Windows<pre><code>C:\Users\你的用户名\AppData\Roaming\npm\node_modules
+</code></pre></li>
+</ul>
+<h4 id="22-本地安装package"><a name="22-本地安装package" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#22-%E6%9C%AC%E5%9C%B0%E5%AE%89%E8%A3%85package"><i class="fa fa-link" aria-hidden="true"></i></a><a name="22-本地安装package" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#22-%E6%9C%AC%E5%9C%B0%E5%AE%89%E8%A3%85package"><i class="fa fa-link" aria-hidden="true"></i></a>2.2 本地安装package</h4>
+<pre><code>$ cd ~/desktop
+$ mkdir gp-project
+$ cd gp-project
+$ npm install underscore
+$ npm list (ls)
+</code></pre><h4 id="23-packagejson初始化"><a name="23-packagejson初始化" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#23-packagejson%E5%88%9D%E5%A7%8B%E5%8C%96"><i class="fa fa-link" aria-hidden="true"></i></a><a name="23-packagejson初始化" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#23-packagejson%E5%88%9D%E5%A7%8B%E5%8C%96"><i class="fa fa-link" aria-hidden="true"></i></a>2.3 package.json初始化</h4>
+<pre><code>$ pwd
+$ npm init -y
+$ ls
+$ cat package.json
+</code></pre><h4 id="24-使用packagejson"><a name="24-使用packagejson" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#24-%E4%BD%BF%E7%94%A8packagejson"><i class="fa fa-link" aria-hidden="true"></i></a><a name="24-使用packagejson" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#24-%E4%BD%BF%E7%94%A8packagejson"><i class="fa fa-link" aria-hidden="true"></i></a>2.4 使用package.json</h4>
+<pre><code>$ npm install underscore --save
+$ cat package.json
+$ npm install lodash --save-dev
+$ cat package.json
+$ rm -rf node_modules
+$ ls
+$ npm install
+$ npm uninstall underscore --save
+$ npm list | grep underscore
+$ cat package.json
+</code></pre><h4 id="25-安装指定版本的包"><a name="25-安装指定版本的包" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#25-%E5%AE%89%E8%A3%85%E6%8C%87%E5%AE%9A%E7%89%88%E6%9C%AC%E7%9A%84%E5%8C%85"><i class="fa fa-link" aria-hidden="true"></i></a><a name="25-安装指定版本的包" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#25-%E5%AE%89%E8%A3%85%E6%8C%87%E5%AE%9A%E7%89%88%E6%9C%AC%E7%9A%84%E5%8C%85"><i class="fa fa-link" aria-hidden="true"></i></a>2.5 安装指定版本的包</h4>
+<pre><code>$ pwd
+$ npm list
+$ npm info underscore
+$ npm view underscore versions
+$ npm install underscore@1.8.0
+$ npm list
+$ npm uninstall underscore
+$ npm list
+</code></pre><h4 id="26-更新本地安装的包"><a name="26-更新本地安装的包" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#26-%E6%9B%B4%E6%96%B0%E6%9C%AC%E5%9C%B0%E5%AE%89%E8%A3%85%E7%9A%84%E5%8C%85"><i class="fa fa-link" aria-hidden="true"></i></a><a name="26-更新本地安装的包" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#26-%E6%9B%B4%E6%96%B0%E6%9C%AC%E5%9C%B0%E5%AE%89%E8%A3%85%E7%9A%84%E5%8C%85"><i class="fa fa-link" aria-hidden="true"></i></a>2.6 更新本地安装的包</h4>
+<pre><code>$ npm info underscore
+$ npm view underscore versions
+$ npm install underscore@1.4.4 --save-dev
+$ npm list | grep gulp
+$ npm outdated //~2.0.0表示patch, ^2.0.0表示minor * 表示xx最新版本
+$ npm list | grep gulp
+$ npm update
+</code></pre><h4 id="27-清除缓存"><a name="27-清除缓存" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#27-%E6%B8%85%E9%99%A4%E7%BC%93%E5%AD%98"><i class="fa fa-link" aria-hidden="true"></i></a><a name="27-清除缓存" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#27-%E6%B8%85%E9%99%A4%E7%BC%93%E5%AD%98"><i class="fa fa-link" aria-hidden="true"></i></a>2.7 清除缓存</h4>
+<pre><code>npm cache clean --force
+</code></pre><h4 id="28-上传自己的包"><a name="28-上传自己的包" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#28-%E4%B8%8A%E4%BC%A0%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8C%85"><i class="fa fa-link" aria-hidden="true"></i></a><a name="28-上传自己的包" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#28-%E4%B8%8A%E4%BC%A0%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8C%85"><i class="fa fa-link" aria-hidden="true"></i></a>2.8 上传自己的包</h4>
+<h6 id="281-编写模块"><a name="281-编写模块" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#281-%E7%BC%96%E5%86%99%E6%A8%A1%E5%9D%97"><i class="fa fa-link" aria-hidden="true"></i></a><a name="281-编写模块" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#281-%E7%BC%96%E5%86%99%E6%A8%A1%E5%9D%97"><i class="fa fa-link" aria-hidden="true"></i></a>2.8.1 编写模块</h6>
+<p>保存为index.js</p>
+<pre><code class="lang-js">exports.sayHello = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{ 
+  <span class="hljs-keyword">return</span> <span class="hljs-string">'Hello World'</span>; 
+}
+</code></pre>
+<h6 id="282-初始化包描述文件"><a name="282-初始化包描述文件" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#282-%E5%88%9D%E5%A7%8B%E5%8C%96%E5%8C%85%E6%8F%8F%E8%BF%B0%E6%96%87%E4%BB%B6"><i class="fa fa-link" aria-hidden="true"></i></a><a name="282-初始化包描述文件" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#282-%E5%88%9D%E5%A7%8B%E5%8C%96%E5%8C%85%E6%8F%8F%E8%BF%B0%E6%96%87%E4%BB%B6"><i class="fa fa-link" aria-hidden="true"></i></a>2.8.2 初始化包描述文件</h6>
+<p>$ npm init 
+package.json</p>
+<pre><code class="lang-json">{ 
+  <span class="hljs-string">"name"</span>: <span class="hljs-string">"gp19-npm"</span>, 
+  <span class="hljs-string">"version"</span>: <span class="hljs-string">"1.0.1"</span>, 
+  <span class="hljs-string">"description"</span>: <span class="hljs-string">"gp19 self module"</span>, 
+  <span class="hljs-string">"main"</span>: <span class="hljs-string">"index.js"</span>,
+  <span class="hljs-string">"scripts"</span>: { 
+    <span class="hljs-string">"test"</span>: <span class="hljs-string">"make test"</span> 
+  }, 
+  <span class="hljs-string">"repository"</span>: { 
+    <span class="hljs-string">"type"</span>: <span class="hljs-string">"Git"</span>, 
+    <span class="hljs-string">"url"</span>: <span class="hljs-string">"git+https://github.com/lurongtao/gp19-npm.git"</span> 
+  }, 
+  <span class="hljs-string">"keywords"</span>: [ 
+    <span class="hljs-string">"demo"</span> 
+  ], 
+  <span class="hljs-string">"author"</span>: <span class="hljs-string">"Felixlu"</span>, 
+  <span class="hljs-string">"license"</span>: <span class="hljs-string">"ISC"</span>, 
+  <span class="hljs-string">"bugs"</span>: { 
+    <span class="hljs-string">"url"</span>: <span class="hljs-string">"https://github.com/lurongtao/gp19-npm/issues"</span> 
+  }, 
+  <span class="hljs-string">"homepage"</span>: <span class="hljs-string">"https://github.com/lurongtao/gp19-npm#readme"</span>, 
+}
+</code></pre>
+<h6 id="283-注册npm仓库账号"><a name="283-注册npm仓库账号" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#283-%E6%B3%A8%E5%86%8Cnpm%E4%BB%93%E5%BA%93%E8%B4%A6%E5%8F%B7"><i class="fa fa-link" aria-hidden="true"></i></a><a name="283-注册npm仓库账号" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#283-%E6%B3%A8%E5%86%8Cnpm%E4%BB%93%E5%BA%93%E8%B4%A6%E5%8F%B7"><i class="fa fa-link" aria-hidden="true"></i></a>2.8.3 注册npm仓库账号</h6>
+<pre><code>https://www.npmjs.com 上面的账号
+felix_lurt/qqmko09ijn
+$ npm adduser
+</code></pre><h6 id="284-上传包"><a name="284-上传包" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#284-%E4%B8%8A%E4%BC%A0%E5%8C%85"><i class="fa fa-link" aria-hidden="true"></i></a><a name="284-上传包" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#284-%E4%B8%8A%E4%BC%A0%E5%8C%85"><i class="fa fa-link" aria-hidden="true"></i></a>2.8.4 上传包</h6>
+<pre><code>$ npm publish
+</code></pre><p>坑：403 Forbidden</p>
+<pre><code>查看npm源：npm config get registry
+切换npm源方法一：npm config set registry http://registry.npmjs.org
+切换npm源方法二：nrm use npm
+</code></pre><h6 id="285-安装包"><a name="285-安装包" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#285-%E5%AE%89%E8%A3%85%E5%8C%85"><i class="fa fa-link" aria-hidden="true"></i></a><a name="285-安装包" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#285-%E5%AE%89%E8%A3%85%E5%8C%85"><i class="fa fa-link" aria-hidden="true"></i></a>2.8.5 安装包</h6>
+<pre><code>$ npm install gp19-npm
+</code></pre><h6 id="286-卸载包"><a name="286-卸载包" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#286-%E5%8D%B8%E8%BD%BD%E5%8C%85"><i class="fa fa-link" aria-hidden="true"></i></a><a name="286-卸载包" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#286-%E5%8D%B8%E8%BD%BD%E5%8C%85"><i class="fa fa-link" aria-hidden="true"></i></a>2.8.6 卸载包</h6>
+<pre><code>查看当前项目引用了哪些包 ：
+npm ls
+卸载包：
+npm unpublish --force
+</code></pre><h6 id="287-使用引入包"><a name="287-使用引入包" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#287-%E4%BD%BF%E7%94%A8%E5%BC%95%E5%85%A5%E5%8C%85"><i class="fa fa-link" aria-hidden="true"></i></a><a name="287-使用引入包" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#287-%E4%BD%BF%E7%94%A8%E5%BC%95%E5%85%A5%E5%8C%85"><i class="fa fa-link" aria-hidden="true"></i></a>2.8.7 使用引入包</h6>
+<pre><code>var hello = require('gp19-npm')
+hello.sayHello()
+</code></pre><h4 id="29-npm-脚本"><a name="29-npm-脚本" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#29-npm-%E8%84%9A%E6%9C%AC"><i class="fa fa-link" aria-hidden="true"></i></a><a name="29-npm-脚本" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#29-npm-%E8%84%9A%E6%9C%AC"><i class="fa fa-link" aria-hidden="true"></i></a>2.9 npm 脚本</h4>
+<p>Node 开发离不开 npm，而脚本功能是 npm 最强大、最常用的功能之一。</p>
+<p><strong>一、什么是 npm 脚本？</strong></p>
+<p>npm 允许在 package.json 文件里面，使用 scripts 字段定义脚本命令。</p>
+<pre><code class="lang-json">{
+  <span class="hljs-comment">// ...</span>
+  <span class="hljs-string">"scripts"</span>: {
+    <span class="hljs-string">"build"</span>: <span class="hljs-string">"node build.js"</span>
+  }
+}
+</code></pre>
+<p><strong>二、执行顺序</strong></p>
+<p>如果 npm 脚本里面需要执行多个任务，那么需要明确它们的执行顺序。</p>
+<p>script1.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> x = <span class="hljs-number">0</span>
+<span class="hljs-built_in">console</span>.log(x)
+</code></pre>
+<p>script2.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> y = <span class="hljs-number">0</span>
+<span class="hljs-built_in">console</span>.log(y)
+</code></pre>
+<pre><code class="lang-json"><span class="hljs-string">"scripts"</span>: {
+  <span class="hljs-string">"script1"</span>: <span class="hljs-string">"node script1.js"</span>,
+  <span class="hljs-string">"script2"</span>: <span class="hljs-string">"node script2.js"</span>
+}
+</code></pre>
+<p>如果是并行执行（即同时的平行执行），可以使用 <code>&amp;</code> 符号。</p>
+<pre><code>$ npm run script1 &amp; npm run script2
+</code></pre><p>如果是继发执行（即只有前一个任务成功，才执行下一个任务），可以使用 <code>&amp;&amp;</code> 符号。</p>
+<pre><code>$ npm run script1 &amp;&amp; npm run script2
+</code></pre><p><strong>三、简写形式</strong></p>
+<p>常用的 npm 脚本简写形式。</p>
+<pre><code>npm start 是 npm run start
+</code></pre><p><strong>四、变量</strong></p>
+<p>npm 脚本有一个非常强大的功能，就是可以使用 npm 的内部变量。</p>
+<p>首先，通过 <code>npm_package_</code> 前缀，npm 脚本可以拿到 package.json 里面的字段。比如，下面是一个 package.json。</p>
+<blockquote>
+<p>注意：一定要在 npm 脚本中运行（如：npm run view）才可以，直接在命令行中运行JS（如：node view.js）是拿不到值的</p>
+</blockquote>
+<pre><code class="lang-json">{
+  <span class="hljs-string">"name"</span>: <span class="hljs-string">"foo"</span>, 
+  <span class="hljs-string">"version"</span>: <span class="hljs-string">"1.2.5"</span>,
+  <span class="hljs-string">"scripts"</span>: {
+    <span class="hljs-string">"view"</span>: <span class="hljs-string">"node view.js"</span>
+  }
+}
+</code></pre>
+<p>那么，变量 npm_package_name 返回 foo，变量 npm_package_version 返回 1.2.5。</p>
+<pre><code class="lang-js"><span class="hljs-comment">// view.js</span>
+<span class="hljs-built_in">console</span>.log(process.env.npm_package_name); <span class="hljs-comment">// foo</span>
+<span class="hljs-built_in">console</span>.log(process.env.npm_package_version); <span class="hljs-comment">// 1.2.5</span>
+</code></pre>
+<p>上面代码中，我们通过环境变量 process.env 对象，拿到 package.json 的字段值。如果是 Bash 脚本，可以用$npm_package_name 和 $npm_package_version 取到这两个值。</p>
+<p>npm<em>package</em>前缀也支持嵌套的package.json字段。</p>
+<pre><code class="lang-json"><span class="hljs-string">"repository"</span>: {
+  <span class="hljs-string">"type"</span>: <span class="hljs-string">"git"</span>,
+  <span class="hljs-string">"url"</span>: <span class="hljs-string">"xxx"</span>
+},
+scripts: {
+  <span class="hljs-string">"view"</span>: <span class="hljs-string">"echo $npm_package_repository_type"</span>
+}
+</code></pre>
+<p>上面代码中，repository 字段的 type 属性，可以通过 npm_package_repository_type 取到。</p>
+<p>下面是另外一个例子。</p>
+<pre><code>"scripts": {
+  "install": "foo.js"
+}
+</code></pre><p>上面代码中，npm_package_scripts_install 变量的值等于 foo.js。</p>
+<p>然后，npm 脚本还可以通过 npm<em>config</em> 前缀，拿到 npm 的配置变量，即 npm config get xxx 命令返回的值。比如，当前模块的发行标签，可以通过 npm_config_tag 取到。</p>
+<pre><code>"view": "echo $npm_config_tag",
+</code></pre><p>注意，package.json 里面的 config 对象，可以被环境变量覆盖。</p>
+<pre><code class="lang-json">{ 
+  <span class="hljs-string">"name"</span> : <span class="hljs-string">"foo"</span>,
+  <span class="hljs-string">"config"</span> : { <span class="hljs-string">"port"</span> : <span class="hljs-string">"8080"</span> },
+  <span class="hljs-string">"scripts"</span> : { <span class="hljs-string">"start"</span> : <span class="hljs-string">"node server.js"</span> }
+}
+</code></pre>
+<p>上面代码中，npm_package_config_port 变量返回的是 8080。这个值可以用下面的方法覆盖。</p>
+<pre><code>$ npm config set foo:port 80
+</code></pre><p>最后，env命令可以列出所有环境变量。</p>
+<p>"env": "env"</p>
+<h4 id="210-npm-安装-git-上发布的包"><a name="210-npm-安装-git-上发布的包" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#210-npm-%E5%AE%89%E8%A3%85-git-%E4%B8%8A%E5%8F%91%E5%B8%83%E7%9A%84%E5%8C%85"><i class="fa fa-link" aria-hidden="true"></i></a><a name="210-npm-安装-git-上发布的包" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#210-npm-%E5%AE%89%E8%A3%85-git-%E4%B8%8A%E5%8F%91%E5%B8%83%E7%9A%84%E5%8C%85"><i class="fa fa-link" aria-hidden="true"></i></a>2.10 npm 安装 git 上发布的包</h4>
+<pre><code># 这样适合安装公司内部的git服务器上的项目
+npm install git+https://git@github.com:lurongtao/gp-project.git
+
+# 或者以ssh的方式
+npm install git+ssh://git@github.com:lurongtao/gp-project.git
+</code></pre><h4 id="211-cross-env-使用"><a name="211-cross-env-使用" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#211-cross-env-%E4%BD%BF%E7%94%A8"><i class="fa fa-link" aria-hidden="true"></i></a><a name="211-cross-env-使用" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#211-cross-env-%E4%BD%BF%E7%94%A8"><i class="fa fa-link" aria-hidden="true"></i></a>2.11 cross-env 使用</h4>
+<h5 id="2111-cross-env是什么"><a name="2111-cross-env是什么" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#2111-cross-env%E6%98%AF%E4%BB%80%E4%B9%88"><i class="fa fa-link" aria-hidden="true"></i></a><a name="2111-cross-env是什么" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#2111-cross-env%E6%98%AF%E4%BB%80%E4%B9%88"><i class="fa fa-link" aria-hidden="true"></i></a>2.11.1 cross-env是什么</h5>
+<p>运行跨平台设置和使用环境变量的脚本</p>
+<h5 id="2112-出现原因"><a name="2112-出现原因" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#2112-%E5%87%BA%E7%8E%B0%E5%8E%9F%E5%9B%A0"><i class="fa fa-link" aria-hidden="true"></i></a><a name="2112-出现原因" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#2112-%E5%87%BA%E7%8E%B0%E5%8E%9F%E5%9B%A0"><i class="fa fa-link" aria-hidden="true"></i></a>2.11.2 出现原因</h5>
+<p>当您使用 NODE_ENV=production, 来设置环境变量时，大多数 Windows 命令提示将会阻塞(报错)。（异常是Windows上的Bash，它使用本机Bash。）换言之，Windows 不支持 NODE_ENV=production 的设置方式。</p>
+<h5 id="2113-解决"><a name="2113-解决" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#2113-%E8%A7%A3%E5%86%B3"><i class="fa fa-link" aria-hidden="true"></i></a><a name="2113-解决" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#2113-%E8%A7%A3%E5%86%B3"><i class="fa fa-link" aria-hidden="true"></i></a>2.11.3 解决</h5>
+<p>cross-env 使得您可以使用单个命令，而不必担心为平台正确设置或使用环境变量。这个迷你的包(cross-env)能够提供一个设置环境变量的 scripts，让你能够以 Unix 方式设置环境变量，然后在 Windows 上也能兼容运行。</p>
+<h5 id="2114-安装"><a name="2114-安装" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#2114-%E5%AE%89%E8%A3%85"><i class="fa fa-link" aria-hidden="true"></i></a><a name="2114-安装" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#2114-%E5%AE%89%E8%A3%85"><i class="fa fa-link" aria-hidden="true"></i></a>2.11.4 安装</h5>
+<p>npm install --save-dev cross-env</p>
+<h5 id="2115-使用"><a name="2115-使用" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#2115-%E4%BD%BF%E7%94%A8"><i class="fa fa-link" aria-hidden="true"></i></a><a name="2115-使用" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#2115-%E4%BD%BF%E7%94%A8"><i class="fa fa-link" aria-hidden="true"></i></a>2.11.5 使用</h5>
+<pre><code class="lang-json">{
+  <span class="hljs-string">"scripts"</span>: {
+    <span class="hljs-string">"build"</span>: <span class="hljs-string">"cross-env NODE_ENV=production webpack --config build/webpack.config.js"</span>
+  }
+}
+</code></pre>
+<p>NODE_ENV环境变量将由 cross-env 设置
+打印 process.env.NODE_ENV === 'production'</p>
+<h3 id="3、nrm-npm-registry-manager"><a name="3、nrm-npm-registry-manager" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#3%E3%80%81nrm-npm-registry-manager"><i class="fa fa-link" aria-hidden="true"></i></a><a name="3、nrm-npm-registry-manager" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#3%E3%80%81nrm-npm-registry-manager"><i class="fa fa-link" aria-hidden="true"></i></a>3、NRM: npm registry manager</h3>
+<h4 id="31-手工切换源"><a name="31-手工切换源" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#31-%E6%89%8B%E5%B7%A5%E5%88%87%E6%8D%A2%E6%BA%90"><i class="fa fa-link" aria-hidden="true"></i></a><a name="31-手工切换源" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#31-%E6%89%8B%E5%B7%A5%E5%88%87%E6%8D%A2%E6%BA%90"><i class="fa fa-link" aria-hidden="true"></i></a>3.1 手工切换源</h4>
+<h5 id="311-查看当前源"><a name="311-查看当前源" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#311-%E6%9F%A5%E7%9C%8B%E5%BD%93%E5%89%8D%E6%BA%90"><i class="fa fa-link" aria-hidden="true"></i></a><a name="311-查看当前源" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#311-%E6%9F%A5%E7%9C%8B%E5%BD%93%E5%89%8D%E6%BA%90"><i class="fa fa-link" aria-hidden="true"></i></a>3.1.1 查看当前源</h5>
+<pre><code>npm config get registry
+</code></pre><h5 id="312-切换淘宝源"><a name="312-切换淘宝源" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#312-%E5%88%87%E6%8D%A2%E6%B7%98%E5%AE%9D%E6%BA%90"><i class="fa fa-link" aria-hidden="true"></i></a><a name="312-切换淘宝源" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#312-%E5%88%87%E6%8D%A2%E6%B7%98%E5%AE%9D%E6%BA%90"><i class="fa fa-link" aria-hidden="true"></i></a>3.1.2 切换淘宝源</h5>
+<pre><code>npm config set registry https://registry.npm.taobao.org
+</code></pre><h4 id="32-nrm-管理源"><a name="32-nrm-管理源" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#32-nrm-%E7%AE%A1%E7%90%86%E6%BA%90"><i class="fa fa-link" aria-hidden="true"></i></a><a name="32-nrm-管理源" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#32-nrm-%E7%AE%A1%E7%90%86%E6%BA%90"><i class="fa fa-link" aria-hidden="true"></i></a>3.2 NRM 管理源</h4>
+<p>NRM (npm registry manager)是npm的镜像源管理工具，有时候国外资源太慢，使用这个就可以快速地在 npm 源间切换。</p>
+<h5 id="321-安装-nrm"><a name="321-安装-nrm" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#321-%E5%AE%89%E8%A3%85-nrm"><i class="fa fa-link" aria-hidden="true"></i></a><a name="321-安装-nrm" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#321-%E5%AE%89%E8%A3%85-nrm"><i class="fa fa-link" aria-hidden="true"></i></a>3.2.1 安装 nrm</h5>
+<p>在命令行执行命令，npm install -g nrm，全局安装nrm。</p>
+<h5 id="322-使用-nrm"><a name="322-使用-nrm" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#322-%E4%BD%BF%E7%94%A8-nrm"><i class="fa fa-link" aria-hidden="true"></i></a><a name="322-使用-nrm" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#322-%E4%BD%BF%E7%94%A8-nrm"><i class="fa fa-link" aria-hidden="true"></i></a>3.2.2 使用 nrm</h5>
+<p>执行命令 nrm ls 查看可选的源。
+其中，带*的是当前使用的源，上面的输出表明当前源是官方源。</p>
+<h5 id="323-切换-nrm"><a name="323-切换-nrm" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#323-%E5%88%87%E6%8D%A2-nrm"><i class="fa fa-link" aria-hidden="true"></i></a><a name="323-切换-nrm" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#323-%E5%88%87%E6%8D%A2-nrm"><i class="fa fa-link" aria-hidden="true"></i></a>3.2.3 切换 nrm</h5>
+<p>如果要切换到taobao源，执行命令nrm use taobao。</p>
+<h5 id="324-测试速度"><a name="324-测试速度" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#324-%E6%B5%8B%E8%AF%95%E9%80%9F%E5%BA%A6"><i class="fa fa-link" aria-hidden="true"></i></a><a name="324-测试速度" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#324-%E6%B5%8B%E8%AF%95%E9%80%9F%E5%BA%A6"><i class="fa fa-link" aria-hidden="true"></i></a>3.2.4 测试速度</h5>
+<p>你还可以通过 nrm test 测试相应源的响应时间。</p>
+<pre><code>nrm test
+</code></pre><h3 id="4、npx-npm-package-extention"><a name="4、npx-npm-package-extention" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#4%E3%80%81npx-npm-package-extention"><i class="fa fa-link" aria-hidden="true"></i></a><a name="4、npx-npm-package-extention" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#4%E3%80%81npx-npm-package-extention"><i class="fa fa-link" aria-hidden="true"></i></a>4、NPX: npm package extention</h3>
+<p>npm 从5.2版开始，增加了 npx 命令。它有很多用处，本文介绍该命令的主要使用场景。</p>
+<p>Node 自带 npm 模块，所以可以直接使用 npx 命令。万一不能用，就要手动安装一下。</p>
+<pre><code>$ npm install -g npx
+</code></pre><h4 id="41-调用项目安装的模块"><a name="41-调用项目安装的模块" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#41-%E8%B0%83%E7%94%A8%E9%A1%B9%E7%9B%AE%E5%AE%89%E8%A3%85%E7%9A%84%E6%A8%A1%E5%9D%97"><i class="fa fa-link" aria-hidden="true"></i></a><a name="41-调用项目安装的模块" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#41-%E8%B0%83%E7%94%A8%E9%A1%B9%E7%9B%AE%E5%AE%89%E8%A3%85%E7%9A%84%E6%A8%A1%E5%9D%97"><i class="fa fa-link" aria-hidden="true"></i></a>4.1 调用项目安装的模块</h4>
+<p>npx 想要解决的主要问题，就是调用项目内部安装的模块。比如，项目内部安装了Mocha。</p>
+<pre><code>$ npm install -D mocha
+</code></pre><p>一般来说，调用 Mocha ，只能在项目脚本和 package.json 的scripts字段里面，如果想在命令行下调用，必须像下面这样。</p>
+<pre><code># 项目的根目录下执行
+$ node-modules/.bin/mocha --version
+</code></pre><p>npx 就是想解决这个问题，让项目内部安装的模块用起来更方便，只要像下面这样调用就行了。</p>
+<pre><code>$ npx mocha --version
+</code></pre><p>npx 的原理很简单，就是运行的时候，会到node_modules/.bin路径和环境变量$PATH里面，检查命令是否存在。</p>
+<p>由于 npx 会检查环境变量$PATH，所以系统命令也可以调用。</p>
+<pre><code># 等同于 ls
+$ npx ls
+</code></pre><p>注意，Bash 内置的命令不在$PATH里面，所以不能用。比如，cd是 Bash 命令，因此就不能用npx cd。</p>
+<h4 id="42-避免全局安装模块"><a name="42-避免全局安装模块" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#42-%E9%81%BF%E5%85%8D%E5%85%A8%E5%B1%80%E5%AE%89%E8%A3%85%E6%A8%A1%E5%9D%97"><i class="fa fa-link" aria-hidden="true"></i></a><a name="42-避免全局安装模块" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#42-%E9%81%BF%E5%85%8D%E5%85%A8%E5%B1%80%E5%AE%89%E8%A3%85%E6%A8%A1%E5%9D%97"><i class="fa fa-link" aria-hidden="true"></i></a>4.2 避免全局安装模块</h4>
+<p>除了调用项目内部模块，npx 还能避免全局安装的模块。比如，create-react-app 这个模块是全局安装，npx 可以运行它，而且不进行全局安装。</p>
+<pre><code>$ npx create-react-app my-react-app
+</code></pre><p>上面代码运行时，npx 将 create-react-app 下载到一个临时目录，使用以后再删除。所以，以后再次执行上面的命令，会重新下载 create-react-app。</p>
+<p>注意，只要 npx 后面的模块无法在本地发现，就会下载同名模块。比如，本地没有安装http-server模块，下面的命令会自动下载该模块，在当前目录启动一个 Web 服务。</p>
+<pre><code>$ npx http-server
+</code></pre><h4 id="43---no-install-参数和---ignore-existing-参数"><a name="43---no-install-参数和---ignore-existing-参数" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#43---no-install-%E5%8F%82%E6%95%B0%E5%92%8C---ignore-existing-%E5%8F%82%E6%95%B0"><i class="fa fa-link" aria-hidden="true"></i></a><a name="43---no-install-参数和---ignore-existing-参数" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#43---no-install-%E5%8F%82%E6%95%B0%E5%92%8C---ignore-existing-%E5%8F%82%E6%95%B0"><i class="fa fa-link" aria-hidden="true"></i></a>4.3 --no-install 参数和 --ignore-existing 参数</h4>
+<p>如果想让 npx 强制使用本地模块，不下载远程模块，可以使用--no-install参数。如果本地不存在该模块，就会报错。</p>
+<pre><code>$ npx --no-install http-server
+</code></pre><p>反过来，如果忽略本地的同名模块，强制安装使用远程模块，可以使用--ignore-existing参数。比如，本地已经安装了http-server，但还是想使用远程模块，就用这个参数。</p>
+<pre><code>$ npx --ignore-existing http-server
+</code></pre><h1 id="三、模块包-与-commonjs"><a name="三、模块包-与-commonjs" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#%E4%B8%89%E3%80%81%E6%A8%A1%E5%9D%97%E5%8C%85-%E4%B8%8E-commonjs"><i class="fa fa-link" aria-hidden="true"></i></a><a name="三、模块包-与-commonjs" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#%E4%B8%89%E3%80%81%E6%A8%A1%E5%9D%97%E5%8C%85-%E4%B8%8E-commonjs"><i class="fa fa-link" aria-hidden="true"></i></a>三、模块/包 与 CommonJS</h1>
+<h3 id="1、模块包分类"><a name="1、模块包分类" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#1%E3%80%81%E6%A8%A1%E5%9D%97%E5%8C%85%E5%88%86%E7%B1%BB"><i class="fa fa-link" aria-hidden="true"></i></a><a name="1、模块包分类" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#1%E3%80%81%E6%A8%A1%E5%9D%97%E5%8C%85%E5%88%86%E7%B1%BB"><i class="fa fa-link" aria-hidden="true"></i></a>1、模块/包分类</h3>
+<p>Node.js 有三类模块，即内置的模块、第三方的模块、自定义的模块。</p>
+<h4 id="11-内置的模块"><a name="11-内置的模块" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#11-%E5%86%85%E7%BD%AE%E7%9A%84%E6%A8%A1%E5%9D%97"><i class="fa fa-link" aria-hidden="true"></i></a><a name="11-内置的模块" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#11-%E5%86%85%E7%BD%AE%E7%9A%84%E6%A8%A1%E5%9D%97"><i class="fa fa-link" aria-hidden="true"></i></a>1.1 内置的模块</h4>
+<p>Node.js 内置模块又叫核心模块，Node.js安装完成可直接使用。如：</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">'path'</span>)
+<span class="hljs-keyword">var</span> extname = path.extname(<span class="hljs-string">'index.html'</span>)
+<span class="hljs-built_in">console</span>.log(extname)
+</code></pre>
+<h4 id="12-第三方的nodejs模块"><a name="12-第三方的nodejs模块" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#12-%E7%AC%AC%E4%B8%89%E6%96%B9%E7%9A%84nodejs%E6%A8%A1%E5%9D%97"><i class="fa fa-link" aria-hidden="true"></i></a><a name="12-第三方的nodejs模块" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#12-%E7%AC%AC%E4%B8%89%E6%96%B9%E7%9A%84nodejs%E6%A8%A1%E5%9D%97"><i class="fa fa-link" aria-hidden="true"></i></a>1.2 第三方的Node.js模块</h4>
+<p>第三方的Node.js模块指的是为了实现某些功能，发布的npmjs.org上的模块，按照一定的开源协议供社群使用。如：</p>
+<pre><code>npm install chalk
+</code></pre><pre><code class="lang-js"><span class="hljs-keyword">const</span> chalk = <span class="hljs-built_in">require</span>(<span class="hljs-string">'chalk'</span>)
+<span class="hljs-built_in">console</span>.log(chalk.blue(<span class="hljs-string">'Hello world!'</span>))
+</code></pre>
+<h4 id="13-自定义的nodejs模块"><a name="13-自定义的nodejs模块" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#13-%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9A%84nodejs%E6%A8%A1%E5%9D%97"><i class="fa fa-link" aria-hidden="true"></i></a><a name="13-自定义的nodejs模块" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#13-%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9A%84nodejs%E6%A8%A1%E5%9D%97"><i class="fa fa-link" aria-hidden="true"></i></a>1.3 自定义的Node.js模块</h4>
+<p>自定义的Node.js模块，也叫文件模块，是我们自己写的供自己使用的模块。同时，这类模块发布到npmjs.org上就成了开源的第三方模块。</p>
+<p>自定义模块是在运行时动态加载，需要完整的路径分析、文件定位、编译执行过程、速度相比核心模块稍微慢一些，但是用的非常多。</p>
+<h5 id="131-模块定义、接口暴露和引用接口"><a name="131-模块定义、接口暴露和引用接口" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#131-%E6%A8%A1%E5%9D%97%E5%AE%9A%E4%B9%89%E3%80%81%E6%8E%A5%E5%8F%A3%E6%9A%B4%E9%9C%B2%E5%92%8C%E5%BC%95%E7%94%A8%E6%8E%A5%E5%8F%A3"><i class="fa fa-link" aria-hidden="true"></i></a><a name="131-模块定义、接口暴露和引用接口" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#131-%E6%A8%A1%E5%9D%97%E5%AE%9A%E4%B9%89%E3%80%81%E6%8E%A5%E5%8F%A3%E6%9A%B4%E9%9C%B2%E5%92%8C%E5%BC%95%E7%94%A8%E6%8E%A5%E5%8F%A3"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.1 模块定义、接口暴露和引用接口</h5>
+<p>我们可以把公共的功能 抽离成为一个单独的 js  文件 作为一个模块，默认情况下面这个模块里面的方法或者属性，外面是没法访问的。如果要让外部可以访问模块里面的方法或者属性，就必须在模块里面通过 exports 或者 module.exports 暴露属性或者方法。</p>
+<p>m1.js：</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> name = <span class="hljs-string">'gp19'</span>
+
+<span class="hljs-keyword">const</span> sayName = () =&gt; {
+  <span class="hljs-built_in">console</span>.log(name)
+}
+
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">'module 1'</span>)
+
+<span class="hljs-comment">// 接口暴露方法一：</span>
+<span class="hljs-built_in">module</span>.exports = {
+  say: sayName
+}
+
+<span class="hljs-comment">// 接口暴露方法二：</span>
+exports.say = sayName
+
+<span class="hljs-comment">// 错误！</span>
+exports = {
+  say: sayName
+}
+</code></pre>
+<p>main.js：</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> m1 = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./m1'</span>)
+m1.say()
+</code></pre>
+<h5 id="132-模块的循环引用"><a name="132-模块的循环引用" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#132-%E6%A8%A1%E5%9D%97%E7%9A%84%E5%BE%AA%E7%8E%AF%E5%BC%95%E7%94%A8"><i class="fa fa-link" aria-hidden="true"></i></a><a name="132-模块的循环引用" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#132-%E6%A8%A1%E5%9D%97%E7%9A%84%E5%BE%AA%E7%8E%AF%E5%BC%95%E7%94%A8"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.2 模块的循环引用</h5>
+<p>由于 exports 使用方式方式不对，会在两个不同 js 循环引用的情况下，导致其中一个 js 无法获取另外一个 js 的方法，从而导致执行报错。如：</p>
+<ul>
+<li>a.js</li>
+</ul>
+<pre><code class="lang-js">exports.done = <span class="hljs-literal">false</span>
+<span class="hljs-keyword">const</span> b = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./b.js'</span>)
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">'in a, b.done = %j'</span>, b.done)
+exports.done = <span class="hljs-literal">true</span>
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">'a done'</span>)
+</code></pre>
+<ul>
+<li>b.js</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-built_in">console</span>.log(<span class="hljs-string">'b starting'</span>)
+exports.done = <span class="hljs-literal">false</span>
+<span class="hljs-keyword">const</span> a = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./a.js'</span>)
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">'in b, a.done = %j'</span>, a.done)
+exports.done = <span class="hljs-literal">true</span>
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">'b done'</span>)
+</code></pre>
+<ul>
+<li>main.js</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-built_in">console</span>.log(<span class="hljs-string">'main starting'</span>)
+<span class="hljs-keyword">const</span> a = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./a.js'</span>)
+<span class="hljs-keyword">const</span> b = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./b.js'</span>)
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">'in main, a.done = %j, b.done = %j'</span>, a.done, b.done)
+</code></pre>
+<p>main.js 首先会 load a.js, 此时执行到const b = require('./b.js');的时候，程序会转去loadb.js, 在b.js中执行到const a = require('./a.js'); 为了防止无限循环，将a.jsexports的未完成副本返回到b.js模块。然后b.js完成加载，并将其导出对象提供给a.js模块。</p>
+<p>我们知道nodeJs的对每个js文件进行了一层包装称为module，module中有一个属性exports，当调用require('a.js')的时候其实返回的是module.exports对象，module.exports初始化为一个{}空的object，所以在上面的例子中，执行到b.js中const a = require('./a.js');时不会load新的a module, 而是将已经load但是还未完成的a module的exports属性返回给b module，所以b.js拿到的是a module的exports对象，即：{done:false}, 虽然在a.js中exports.done被修改成了true，但是由于此时a.js未load完成，所以在b.js输出的a module的属性done为false，而在main.js中输出的a module的属性done为true. Nodejs通过上面这种返回未完成exports对象来解决循环引用的问题。 </p>
+<h1 id="四、常用内置模块"><a name="四、常用内置模块" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#%E5%9B%9B%E3%80%81%E5%B8%B8%E7%94%A8%E5%86%85%E7%BD%AE%E6%A8%A1%E5%9D%97"><i class="fa fa-link" aria-hidden="true"></i></a><a name="四、常用内置模块" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#%E5%9B%9B%E3%80%81%E5%B8%B8%E7%94%A8%E5%86%85%E7%BD%AE%E6%A8%A1%E5%9D%97"><i class="fa fa-link" aria-hidden="true"></i></a>四、常用内置模块</h1>
+<p>这里介绍几个常用的内置模块：url, querystring, http, events, fs, stream, readline, crypto, zlib</p>
+<h3 id="1、url"><a name="1、url" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#1%E3%80%81url"><i class="fa fa-link" aria-hidden="true"></i></a><a name="1、url" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#1%E3%80%81url"><i class="fa fa-link" aria-hidden="true"></i></a>1、url</h3>
+<h4 id="11-parse"><a name="11-parse" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#11-parse"><i class="fa fa-link" aria-hidden="true"></i></a><a name="11-parse" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#11-parse"><i class="fa fa-link" aria-hidden="true"></i></a>1.1 parse</h4>
+<p>url.parse(urlString[, parseQueryString[, slashesDenoteHost]])</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> url = <span class="hljs-built_in">require</span>(<span class="hljs-string">'url'</span>)
+<span class="hljs-keyword">const</span> urlString = <span class="hljs-string">'https://www.baidu.com:443/ad/index.html?id=8&amp;name=mouse#tag=110'</span>
+<span class="hljs-keyword">const</span> parsedStr = url.parse(urlString)
+<span class="hljs-built_in">console</span>.log(parsedStr)
+</code></pre>
+<h4 id="12-format"><a name="12-format" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#12-format"><i class="fa fa-link" aria-hidden="true"></i></a><a name="12-format" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#12-format"><i class="fa fa-link" aria-hidden="true"></i></a>1.2 format</h4>
+<p>url.format(urlObject)</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> url = <span class="hljs-built_in">require</span>(<span class="hljs-string">'url'</span>)
+<span class="hljs-keyword">const</span> urlObject = {
+  protocol: <span class="hljs-string">'https:'</span>,
+  slashes: <span class="hljs-literal">true</span>,
+  auth: <span class="hljs-literal">null</span>,
+  host: <span class="hljs-string">'www.baidu.com:443'</span>,
+  port: <span class="hljs-string">'443'</span>,
+  hostname: <span class="hljs-string">'www.baidu.com'</span>,
+  hash: <span class="hljs-string">'#tag=110'</span>,
+  search: <span class="hljs-string">'?id=8&amp;name=mouse'</span>,
+  query: { id: <span class="hljs-string">'8'</span>, name: <span class="hljs-string">'mouse'</span> },
+  pathname: <span class="hljs-string">'/ad/index.html'</span>,
+  path: <span class="hljs-string">'/ad/index.html?id=8&amp;name=mouse'</span>,
+  href: <span class="hljs-string">'https://www.baidu.com:443/ad/index.html?id=8&amp;name=mouse#tag=110'</span>
+}
+<span class="hljs-keyword">const</span> parsedObj = url.format(urlObject)
+<span class="hljs-built_in">console</span>.log(parsedObj)
+</code></pre>
+<h4 id="13-resolve"><a name="13-resolve" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#13-resolve"><i class="fa fa-link" aria-hidden="true"></i></a><a name="13-resolve" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#13-resolve"><i class="fa fa-link" aria-hidden="true"></i></a>1.3 resolve</h4>
+<p>url.resolve(from, to)</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> url = <span class="hljs-built_in">require</span>(<span class="hljs-string">'url'</span>)
+<span class="hljs-keyword">var</span> a = url.resolve(<span class="hljs-string">'/one/two/three'</span>, <span class="hljs-string">'four'</span>)
+<span class="hljs-keyword">var</span> b = url.resolve(<span class="hljs-string">'http://example.com/'</span>, <span class="hljs-string">'/one'</span>)
+<span class="hljs-keyword">var</span> c = url.resolve(<span class="hljs-string">'http://example.com/one'</span>, <span class="hljs-string">'/two'</span>)
+<span class="hljs-built_in">console</span>.log(a + <span class="hljs-string">","</span> + b + <span class="hljs-string">","</span> + c)
+</code></pre>
+<h3 id="2、querystring"><a name="2、querystring" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#2%E3%80%81querystring"><i class="fa fa-link" aria-hidden="true"></i></a><a name="2、querystring" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#2%E3%80%81querystring"><i class="fa fa-link" aria-hidden="true"></i></a>2、querystring</h3>
+<h4 id="21-parse"><a name="21-parse" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#21-parse"><i class="fa fa-link" aria-hidden="true"></i></a><a name="21-parse" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#21-parse"><i class="fa fa-link" aria-hidden="true"></i></a>2.1 parse</h4>
+<p>querystring.parse(str[, sep[, eq[, options]]])</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> querystring = <span class="hljs-built_in">require</span>(<span class="hljs-string">'querystring'</span>)
+<span class="hljs-keyword">var</span> qs = <span class="hljs-string">'x=3&amp;y=4'</span>
+<span class="hljs-keyword">var</span> parsed = querystring.parse(qs)
+<span class="hljs-built_in">console</span>.log(parsed)
+</code></pre>
+<h4 id="22-stringify"><a name="22-stringify" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#22-stringify"><i class="fa fa-link" aria-hidden="true"></i></a><a name="22-stringify" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#22-stringify"><i class="fa fa-link" aria-hidden="true"></i></a>2.2 stringify</h4>
+<p>querystring.stringify(obj[, sep[, eq[, options]]])</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> querystring = <span class="hljs-built_in">require</span>(<span class="hljs-string">'querystring'</span>)
+<span class="hljs-keyword">var</span> qo = {
+  x: <span class="hljs-number">3</span>,
+  y: <span class="hljs-number">4</span>
+}
+<span class="hljs-keyword">var</span> parsed = querystring.stringify(qo)
+<span class="hljs-built_in">console</span>.log(parsed)
+</code></pre>
+<h4 id="23-escapeunescape"><a name="23-escapeunescape" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#23-escapeunescape"><i class="fa fa-link" aria-hidden="true"></i></a><a name="23-escapeunescape" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#23-escapeunescape"><i class="fa fa-link" aria-hidden="true"></i></a>2.3 escape/unescape</h4>
+<p>querystring.escape(str)</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> querystring = <span class="hljs-built_in">require</span>(<span class="hljs-string">'querystring'</span>)
+<span class="hljs-keyword">var</span> str = <span class="hljs-string">'id=3&amp;city=北京&amp;url=https://www.baidu.com'</span>
+<span class="hljs-keyword">var</span> escaped = querystring.escape(str)
+<span class="hljs-built_in">console</span>.log(escaped)
+</code></pre>
+<p>querystring.unescape(str)</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> querystring = <span class="hljs-built_in">require</span>(<span class="hljs-string">'querystring'</span>)
+<span class="hljs-keyword">var</span> str = <span class="hljs-string">'id%3D3%26city%3D%E5%8C%97%E4%BA%AC%26url%3Dhttps%3A%2F%2Fwww.baidu.com'</span>
+<span class="hljs-keyword">var</span> unescaped = querystring.unescape(str)
+<span class="hljs-built_in">console</span>.log(unescaped)
+</code></pre>
+<h3 id="3、httphttps"><a name="3、httphttps" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#3%E3%80%81httphttps"><i class="fa fa-link" aria-hidden="true"></i></a><a name="3、httphttps" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#3%E3%80%81httphttps"><i class="fa fa-link" aria-hidden="true"></i></a>3、http/https</h3>
+<h4 id="31-get"><a name="31-get" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#31-get"><i class="fa fa-link" aria-hidden="true"></i></a><a name="31-get" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#31-get"><i class="fa fa-link" aria-hidden="true"></i></a>3.1 get</h4>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> http = <span class="hljs-built_in">require</span>(<span class="hljs-string">'http'</span>)
+<span class="hljs-keyword">var</span> https = <span class="hljs-built_in">require</span>(<span class="hljs-string">'https'</span>)
+
+<span class="hljs-comment">// 1、接口 2、跨域</span>
+<span class="hljs-keyword">const</span> server = http.createServer((request, response) =&gt; {
+  <span class="hljs-keyword">var</span> url = request.url.substr(<span class="hljs-number">1</span>)
+
+  <span class="hljs-keyword">var</span> data = <span class="hljs-string">''</span>
+
+  response.writeHeader(<span class="hljs-number">200</span>, {
+    <span class="hljs-string">'content-type'</span>: <span class="hljs-string">'application/json;charset=utf-8'</span>,
+    <span class="hljs-string">'Access-Control-Allow-Origin'</span>: <span class="hljs-string">'*'</span>
+  })
+
+  https.get(<span class="hljs-string">`https://m.lagou.com/listmore.json<span class="hljs-subst">${url}</span>`</span>, (res) =&gt; {
+
+    res.on(<span class="hljs-string">'data'</span>, (chunk) =&gt; {
+      data += chunk
+    })
+
+    res.on(<span class="hljs-string">'end'</span>, () =&gt; {
+      response.end(<span class="hljs-built_in">JSON</span>.stringify({
+        ret: <span class="hljs-literal">true</span>,
+        data
+      }))
+    })
+  })
+
+})
+
+server.listen(<span class="hljs-number">8080</span>, () =&gt; {
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'localhost:8080'</span>)
+})
+</code></pre>
+<h4 id="32-post：服务器提交（攻击）"><a name="32-post：服务器提交（攻击）" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#32-post%EF%BC%9A%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%8F%90%E4%BA%A4%EF%BC%88%E6%94%BB%E5%87%BB%EF%BC%89"><i class="fa fa-link" aria-hidden="true"></i></a><a name="32-post：服务器提交（攻击）" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#32-post%EF%BC%9A%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%8F%90%E4%BA%A4%EF%BC%88%E6%94%BB%E5%87%BB%EF%BC%89"><i class="fa fa-link" aria-hidden="true"></i></a>3.2 post：服务器提交（攻击）</h4>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> https = <span class="hljs-built_in">require</span>(<span class="hljs-string">'https'</span>)
+<span class="hljs-keyword">const</span> querystring = <span class="hljs-built_in">require</span>(<span class="hljs-string">'querystring'</span>)
+
+<span class="hljs-keyword">const</span> postData = querystring.stringify({
+  province: <span class="hljs-string">'上海'</span>,
+  city: <span class="hljs-string">'上海'</span>,
+  district: <span class="hljs-string">'宝山区'</span>,
+  address: <span class="hljs-string">'同济支路199号智慧七立方3号楼2-4层'</span>,
+  latitude: <span class="hljs-number">43.0</span>,
+  longitude: <span class="hljs-number">160.0</span>,
+  message: <span class="hljs-string">'求购一条小鱼'</span>,
+  contact: <span class="hljs-string">'13666666'</span>,
+  type: <span class="hljs-string">'sell'</span>,
+  time: <span class="hljs-number">1571217561</span>
+})
+
+<span class="hljs-keyword">const</span> options = {
+  protocol: <span class="hljs-string">'https:'</span>,
+  hostname: <span class="hljs-string">'ik9hkddr.qcloud.la'</span>,
+  method: <span class="hljs-string">'POST'</span>,
+  port: <span class="hljs-number">443</span>,
+  path: <span class="hljs-string">'/index.php/trade/add_item'</span>,
+  headers: {
+    <span class="hljs-string">'Content-Type'</span>: <span class="hljs-string">'application/x-www-form-urlencoded'</span>,
+    <span class="hljs-string">'Content-Length'</span>: Buffer.byteLength(postData)
+  }
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">doPost</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">let</span> data
+
+  <span class="hljs-keyword">let</span> req = https.request(options, (res) =&gt; {
+    res.on(<span class="hljs-string">'data'</span>, chunk =&gt; data += chunk)
+    res.on(<span class="hljs-string">'end'</span>, () =&gt; {
+      <span class="hljs-built_in">console</span>.log(data)
+    })
+  })
+
+  req.write(postData)
+  req.end()
+}
+
+<span class="hljs-comment">// setInterval(() =&gt; {</span>
+<span class="hljs-comment">//   doPost()</span>
+<span class="hljs-comment">// }, 1000)</span>
+</code></pre>
+<h4 id="33-跨域：jsonp"><a name="33-跨域：jsonp" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#33-%E8%B7%A8%E5%9F%9F%EF%BC%9Ajsonp"><i class="fa fa-link" aria-hidden="true"></i></a><a name="33-跨域：jsonp" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#33-%E8%B7%A8%E5%9F%9F%EF%BC%9Ajsonp"><i class="fa fa-link" aria-hidden="true"></i></a>3.3 跨域：jsonp</h4>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> http = <span class="hljs-built_in">require</span>(<span class="hljs-string">'http'</span>)
+<span class="hljs-keyword">const</span> url = <span class="hljs-built_in">require</span>(<span class="hljs-string">'url'</span>)
+
+<span class="hljs-keyword">const</span> app = http.createServer((req, res) =&gt; {
+  <span class="hljs-keyword">let</span> urlObj = url.parse(req.url, <span class="hljs-literal">true</span>)
+
+  <span class="hljs-keyword">switch</span> (urlObj.pathname) {
+    <span class="hljs-keyword">case</span> <span class="hljs-string">'/api/user'</span>:
+      res.end(<span class="hljs-string">`<span class="hljs-subst">${urlObj.query.cb}</span>({"name": "gp145"})`</span>)
+      <span class="hljs-keyword">break</span>
+    <span class="hljs-keyword">default</span>:
+      res.end(<span class="hljs-string">'404.'</span>)
+      <span class="hljs-keyword">break</span>
+  }
+})
+
+app.listen(<span class="hljs-number">8080</span>, () =&gt; {
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'localhost:8080'</span>)
+})
+</code></pre>
+<h4 id="34-跨域：cors"><a name="34-跨域：cors" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#34-%E8%B7%A8%E5%9F%9F%EF%BC%9Acors"><i class="fa fa-link" aria-hidden="true"></i></a><a name="34-跨域：cors" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#34-%E8%B7%A8%E5%9F%9F%EF%BC%9Acors"><i class="fa fa-link" aria-hidden="true"></i></a>3.4 跨域：CORS</h4>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> http = <span class="hljs-built_in">require</span>(<span class="hljs-string">'http'</span>)
+<span class="hljs-keyword">const</span> url = <span class="hljs-built_in">require</span>(<span class="hljs-string">'url'</span>)
+<span class="hljs-keyword">const</span> querystring = <span class="hljs-built_in">require</span>(<span class="hljs-string">'querystring'</span>)
+
+<span class="hljs-keyword">const</span> app = http.createServer((req, res) =&gt; {
+  <span class="hljs-keyword">let</span> data = <span class="hljs-string">''</span>
+  <span class="hljs-keyword">let</span> urlObj = url.parse(req.url, <span class="hljs-literal">true</span>)
+
+  res.writeHead(<span class="hljs-number">200</span>, {
+    <span class="hljs-string">'content-type'</span>: <span class="hljs-string">'application/json;charset=utf-8'</span>,
+    <span class="hljs-string">'Access-Control-Allow-Origin'</span>: <span class="hljs-string">'*'</span>
+  })
+
+  req.on(<span class="hljs-string">'data'</span>, (chunk) =&gt; {
+    data += chunk
+  })
+
+  req.on(<span class="hljs-string">'end'</span>, () =&gt; {
+    responseResult(querystring.parse(data))
+  })
+
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">responseResult</span>(<span class="hljs-params">data</span>) </span>{
+    <span class="hljs-keyword">switch</span> (urlObj.pathname) {
+      <span class="hljs-keyword">case</span> <span class="hljs-string">'/api/login'</span>:
+        res.end(<span class="hljs-built_in">JSON</span>.stringify({
+          message: data
+        }))
+        <span class="hljs-keyword">break</span>
+      <span class="hljs-keyword">default</span>:
+        res.end(<span class="hljs-string">'404.'</span>)
+        <span class="hljs-keyword">break</span>
+    }
+  }
+})
+
+app.listen(<span class="hljs-number">8080</span>, () =&gt; {
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'localhost:8080'</span>)
+})
+</code></pre>
+<h4 id="35-跨域：middleware（http-proxy-middware）"><a name="35-跨域：middleware（http-proxy-middware）" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#35-%E8%B7%A8%E5%9F%9F%EF%BC%9Amiddleware%EF%BC%88http-proxy-middware%EF%BC%89"><i class="fa fa-link" aria-hidden="true"></i></a><a name="35-跨域：middleware（http-proxy-middware）" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#35-%E8%B7%A8%E5%9F%9F%EF%BC%9Amiddleware%EF%BC%88http-proxy-middware%EF%BC%89"><i class="fa fa-link" aria-hidden="true"></i></a>3.5 跨域：middleware（http-proxy-middware）</h4>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> http = <span class="hljs-built_in">require</span>(<span class="hljs-string">'http'</span>)
+<span class="hljs-keyword">const</span> proxy = <span class="hljs-built_in">require</span>(<span class="hljs-string">'http-proxy-middleware'</span>)
+
+http.createServer((req, res) =&gt; {
+  <span class="hljs-keyword">let</span> url = req.url
+
+  res.writeHead(<span class="hljs-number">200</span>, {
+    <span class="hljs-string">'Access-Control-Allow-Origin'</span>: <span class="hljs-string">'*'</span>
+  })
+
+  <span class="hljs-keyword">if</span> (<span class="hljs-regexp">/^\/api/</span>.test(url)) {
+    <span class="hljs-keyword">let</span> apiProxy = proxy(<span class="hljs-string">'/api'</span>, { 
+      target: <span class="hljs-string">'https://m.lagou.com'</span>,
+      changeOrigin: <span class="hljs-literal">true</span>,
+      pathRewrite: {
+        <span class="hljs-string">'^/api'</span>: <span class="hljs-string">''</span>
+      }
+    })
+
+    <span class="hljs-comment">// http-proy-middleware 在Node.js中使用的方法</span>
+    apiProxy(req, res)
+  } <span class="hljs-keyword">else</span> {
+    <span class="hljs-keyword">switch</span> (url) {
+      <span class="hljs-keyword">case</span> <span class="hljs-string">'/index.html'</span>:
+        res.end(<span class="hljs-string">'index.html'</span>)
+        <span class="hljs-keyword">break</span>
+      <span class="hljs-keyword">case</span> <span class="hljs-string">'/search.html'</span>:
+        res.end(<span class="hljs-string">'search.html'</span>)
+        <span class="hljs-keyword">break</span>
+      <span class="hljs-keyword">default</span>:
+        res.end(<span class="hljs-string">'[404]page not found.'</span>)
+    }
+  }
+}).listen(<span class="hljs-number">8080</span>)
+</code></pre>
+<h4 id="36-爬虫"><a name="36-爬虫" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#36-%E7%88%AC%E8%99%AB"><i class="fa fa-link" aria-hidden="true"></i></a><a name="36-爬虫" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#36-%E7%88%AC%E8%99%AB"><i class="fa fa-link" aria-hidden="true"></i></a>3.6 爬虫</h4>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> https = <span class="hljs-built_in">require</span>(<span class="hljs-string">'https'</span>)
+<span class="hljs-keyword">const</span> http = <span class="hljs-built_in">require</span>(<span class="hljs-string">'http'</span>)
+<span class="hljs-keyword">const</span> cheerio = <span class="hljs-built_in">require</span>(<span class="hljs-string">'cheerio'</span>)
+
+http.createServer((request, response) =&gt; {
+  response.writeHead(<span class="hljs-number">200</span>, {
+    <span class="hljs-string">'content-type'</span>: <span class="hljs-string">'application/json;charset=utf-8'</span>
+  })
+
+  <span class="hljs-keyword">const</span> options = {
+    protocol: <span class="hljs-string">'https:'</span>,
+    hostname: <span class="hljs-string">'maoyan.com'</span>,
+    port: <span class="hljs-number">443</span>,
+    path: <span class="hljs-string">'/'</span>,
+    method: <span class="hljs-string">'GET'</span>
+  }
+
+  <span class="hljs-keyword">const</span> req = https.request(options, (res) =&gt; {
+    <span class="hljs-keyword">let</span> data = <span class="hljs-string">''</span>
+    res.on(<span class="hljs-string">'data'</span>, (chunk) =&gt; {
+      data += chunk
+    })
+
+    res.on(<span class="hljs-string">'end'</span>, () =&gt; {
+      filterData(data)
+    })
+  })
+
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">filterData</span>(<span class="hljs-params">data</span>) </span>{
+    <span class="hljs-keyword">let</span> $ = cheerio.load(data)
+    <span class="hljs-keyword">let</span> $movieList = $(<span class="hljs-string">'.movie-item'</span>)
+    <span class="hljs-keyword">let</span> movies = []
+    $movieList.each((index, value) =&gt; {
+      movies.push({
+        title: $(value).find(<span class="hljs-string">'.movie-title'</span>).attr(<span class="hljs-string">'title'</span>),
+        score: $(value).find(<span class="hljs-string">'.movie-score i'</span>).text(),
+      })
+    })
+
+    response.end(<span class="hljs-built_in">JSON</span>.stringify(movies))
+  }
+
+  req.end()
+}).listen(<span class="hljs-number">9000</span>)
+</code></pre>
+<h3 id="4、events"><a name="4、events" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#4%E3%80%81events"><i class="fa fa-link" aria-hidden="true"></i></a><a name="4、events" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#4%E3%80%81events"><i class="fa fa-link" aria-hidden="true"></i></a>4、Events</h3>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> EventEmitter = <span class="hljs-built_in">require</span>(<span class="hljs-string">'events'</span>)
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyEventEmitter</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">EventEmitter</span> </span>{}
+
+<span class="hljs-keyword">const</span> event = <span class="hljs-keyword">new</span> MyEventEmitter()
+
+event.on(<span class="hljs-string">'play'</span>, (movie) =&gt; {
+  <span class="hljs-built_in">console</span>.log(movie)
+})
+
+event.emit(<span class="hljs-string">'play'</span>, <span class="hljs-string">'我和我的祖国'</span>)
+event.emit(<span class="hljs-string">'play'</span>, <span class="hljs-string">'中国机长'</span>)
+</code></pre>
+<h3 id="5、file-system"><a name="5、file-system" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#5%E3%80%81file-system"><i class="fa fa-link" aria-hidden="true"></i></a><a name="5、file-system" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#5%E3%80%81file-system"><i class="fa fa-link" aria-hidden="true"></i></a>5、File System</h3>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">'fs'</span>)
+<span class="hljs-keyword">const</span> fsP = <span class="hljs-built_in">require</span>(<span class="hljs-string">'fs'</span>).promises
+
+<span class="hljs-comment">// 创建文件夹</span>
+fs.mkdir(<span class="hljs-string">'./logs'</span>, (err) =&gt; {
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'done.'</span>)
+})
+
+<span class="hljs-comment">// 文件夹改名</span>
+fs.rename(<span class="hljs-string">'./logs'</span>, <span class="hljs-string">'./log'</span>, () =&gt; {
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'done'</span>)
+})
+
+<span class="hljs-comment">// 删除文件夹</span>
+fs.rmdir(<span class="hljs-string">'./log'</span>, () =&gt; {
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'done.'</span>)
+})
+
+<span class="hljs-comment">// 写内容到文件里</span>
+fs.writeFile(
+  <span class="hljs-string">'./logs/log1.txt'</span>,
+  <span class="hljs-string">'hello'</span>,
+  <span class="hljs-comment">// 错误优先的回调函数</span>
+  (err) =&gt; {
+    <span class="hljs-keyword">if</span> (err) {
+      <span class="hljs-built_in">console</span>.log(err.message)
+    } <span class="hljs-keyword">else</span> {
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'文件创建成功'</span>)
+    }
+  }
+)
+
+<span class="hljs-comment">// 给文件追加内容</span>
+fs.appendFile(<span class="hljs-string">'./logs/log1.txt'</span>, <span class="hljs-string">'\nworld'</span>, () =&gt; {
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'done.'</span>)
+})
+
+<span class="hljs-comment">// 读取文件内容</span>
+fs.readFile(<span class="hljs-string">'./logs/log1.txt'</span>, <span class="hljs-string">'utf-8'</span>, (err, data) =&gt; {
+  <span class="hljs-built_in">console</span>.log(data)
+})
+
+<span class="hljs-comment">// 删除文件</span>
+fs.unlink(<span class="hljs-string">'./logs/log1.txt'</span>, (err) =&gt; {
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'done.'</span>)
+})
+
+<span class="hljs-comment">// 批量写文件</span>
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">10</span>; i++) {
+  fs.writeFile(<span class="hljs-string">`./logs/log-<span class="hljs-subst">${i}</span>.txt`</span>, <span class="hljs-string">`log-<span class="hljs-subst">${i}</span>`</span>, (err) =&gt; {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'done.'</span>)
+  })
+}
+
+<span class="hljs-comment">// 读取文件/目录信息</span>
+fs.readdir(<span class="hljs-string">'./'</span>, (err, data) =&gt; {
+  data.forEach((value, index) =&gt; {
+    fs.stat(<span class="hljs-string">`./<span class="hljs-subst">${value}</span>`</span>, (err, stats) =&gt; {
+      <span class="hljs-comment">// console.log(value + ':' + stats.size)</span>
+      <span class="hljs-built_in">console</span>.log(value + <span class="hljs-string">' is '</span> + (stats.isDirectory() ? <span class="hljs-string">'directory'</span> : <span class="hljs-string">'file'</span>))
+    })
+  })
+})
+
+<span class="hljs-comment">// 同步读取文件</span>
+<span class="hljs-keyword">try</span> {
+  <span class="hljs-keyword">const</span> content = fs.readFileSync(<span class="hljs-string">'./logs/log-1.txt'</span>, <span class="hljs-string">'utf-8'</span>)
+  <span class="hljs-built_in">console</span>.log(content)
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-number">0</span>)
+} <span class="hljs-keyword">catch</span> (e) {
+  <span class="hljs-built_in">console</span>.log(e.message)
+}
+
+<span class="hljs-built_in">console</span>.log(<span class="hljs-number">1</span>)
+
+<span class="hljs-comment">// 异步读取文件：方法一</span>
+fs.readFile(<span class="hljs-string">'./logs/log-0.txt'</span>, <span class="hljs-string">'utf-8'</span>, (err, content) =&gt; {
+  <span class="hljs-built_in">console</span>.log(content)
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-number">0</span>)
+})
+<span class="hljs-built_in">console</span>.log(<span class="hljs-number">1</span>)
+
+<span class="hljs-comment">// 异步读取文件：方法二</span>
+fs.readFile(<span class="hljs-string">'./logs/log-0.txt'</span>, <span class="hljs-string">'utf-8'</span>).then(result =&gt; {
+  <span class="hljs-built_in">console</span>.log(result)
+})
+
+<span class="hljs-comment">// 异步读取文件：方法三</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getFile</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>((resolve) =&gt; {
+    fs.readFile(<span class="hljs-string">'./logs/log-0.txt'</span>, <span class="hljs-string">'utf-8'</span>, (err, data) =&gt; {
+      resolve(data)
+    })
+  })
+}
+
+;(<span class="hljs-keyword">async</span> () =&gt; {
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">await</span> getFile())
+})()
+
+<span class="hljs-comment">// 异步读取文件：方法四</span>
+<span class="hljs-keyword">const</span> fsp = fsP.readFile(<span class="hljs-string">'./logs/log-1.txt'</span>, <span class="hljs-string">'utf-8'</span>).then((result) =&gt; {
+  <span class="hljs-built_in">console</span>.log(result)
+})
+
+<span class="hljs-built_in">console</span>.log(fsP)
+
+<span class="hljs-comment">// watch 监测文件变化</span>
+fs.watch(<span class="hljs-string">'./logs/log-0.txt'</span>, () =&gt; {
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-number">0</span>)
+})
+</code></pre>
+<h3 id="6、stream"><a name="6、stream" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#6%E3%80%81stream"><i class="fa fa-link" aria-hidden="true"></i></a><a name="6、stream" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#6%E3%80%81stream"><i class="fa fa-link" aria-hidden="true"></i></a>6、Stream</h3>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">'fs'</span>)
+
+<span class="hljs-keyword">const</span> readstream = fs.createReadStream(<span class="hljs-string">'./note.txt'</span>)
+<span class="hljs-keyword">const</span> writestream = fs.createWriteStream(<span class="hljs-string">'./note2.txt'</span>)
+
+writestream.write(readstream)
+</code></pre>
+<h3 id="7、zlib"><a name="7、zlib" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#7%E3%80%81zlib"><i class="fa fa-link" aria-hidden="true"></i></a><a name="7、zlib" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#7%E3%80%81zlib"><i class="fa fa-link" aria-hidden="true"></i></a>7、Zlib</h3>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">'fs'</span>)
+<span class="hljs-keyword">const</span> zlib = <span class="hljs-built_in">require</span>(<span class="hljs-string">'zlib'</span>)
+
+<span class="hljs-keyword">const</span> gzip = zlib.createGzip()
+
+<span class="hljs-keyword">const</span> readstream = fs.createReadStream(<span class="hljs-string">'./note.txt'</span>)
+<span class="hljs-keyword">const</span> writestream = fs.createWriteStream(<span class="hljs-string">'./note2.txt'</span>)
+
+readstream
+  .pipe(gzip)
+  .pipe(writestream)
+
+writestream.write(readstream)
+</code></pre>
+<h3 id="8、readline"><a name="8、readline" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#8%E3%80%81readline"><i class="fa fa-link" aria-hidden="true"></i></a><a name="8、readline" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#8%E3%80%81readline"><i class="fa fa-link" aria-hidden="true"></i></a>8、ReadLine</h3>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> readline = <span class="hljs-built_in">require</span>(<span class="hljs-string">'readline'</span>)
+
+<span class="hljs-keyword">const</span> rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+})
+
+rl.question(<span class="hljs-string">'What do you think of Node.js? '</span>, (answer) =&gt; {
+  <span class="hljs-comment">// <span class="hljs-doctag">TODO:</span> Log the answer in a database</span>
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`Thank you for your valuable feedback: <span class="hljs-subst">${answer}</span>`</span>)
+
+  rl.close()
+})
+</code></pre>
+<h3 id="9、crypto"><a name="9、crypto" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#9%E3%80%81crypto"><i class="fa fa-link" aria-hidden="true"></i></a><a name="9、crypto" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#9%E3%80%81crypto"><i class="fa fa-link" aria-hidden="true"></i></a>9、Crypto</h3>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> crypto = <span class="hljs-built_in">require</span>(<span class="hljs-string">'crypto'</span>)
+
+<span class="hljs-keyword">const</span> secret = <span class="hljs-string">'abcdefg'</span>
+<span class="hljs-keyword">const</span> hash = crypto.createHmac(<span class="hljs-string">'sha256'</span>, secret)
+                   .update(<span class="hljs-string">'I love you'</span>)
+                   .digest(<span class="hljs-string">'hex'</span>)
+<span class="hljs-built_in">console</span>.log(hash)
+</code></pre>
+<h1 id="四、路由"><a name="四、路由" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#%E5%9B%9B%E3%80%81%E8%B7%AF%E7%94%B1"><i class="fa fa-link" aria-hidden="true"></i></a><a name="四、路由" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#%E5%9B%9B%E3%80%81%E8%B7%AF%E7%94%B1"><i class="fa fa-link" aria-hidden="true"></i></a>四、路由</h1>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> http = <span class="hljs-built_in">require</span>(<span class="hljs-string">'http'</span>)
+<span class="hljs-keyword">var</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">'fs'</span>)
+
+http.createServer( <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"> req, res </span>) </span>{
+
+  <span class="hljs-keyword">switch</span> ( req.url ) {
+    <span class="hljs-keyword">case</span> <span class="hljs-string">'/home'</span>:
+      res.write(<span class="hljs-string">'home'</span>)
+      res.end()
+      <span class="hljs-keyword">break</span>
+    <span class="hljs-keyword">case</span> <span class="hljs-string">'/mine'</span>:
+      res.write(<span class="hljs-string">'mine'</span>)
+      res.end()
+      <span class="hljs-keyword">break</span>
+    <span class="hljs-keyword">case</span> <span class="hljs-string">'/login'</span>: 
+      fs.readFile( <span class="hljs-string">'./static/login.html'</span>,<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"> error , data </span>) </span>{
+        <span class="hljs-keyword">if</span> ( error ) <span class="hljs-keyword">throw</span> error  
+        res.write( data )
+        res.end()
+      })
+      <span class="hljs-keyword">break</span>
+    <span class="hljs-keyword">case</span> <span class="hljs-string">'/fulian.jpg'</span>:
+      fs.readFile( <span class="hljs-string">'./static/fulian.jpg'</span>, <span class="hljs-string">'binary'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"> error , data </span>) </span>{
+        <span class="hljs-keyword">if</span>( error ) <span class="hljs-keyword">throw</span> error 
+        res.write( data, <span class="hljs-string">'binary'</span> )
+        res.end()
+      })
+      <span class="hljs-keyword">break</span>
+    <span class="hljs-keyword">default</span>: 
+      <span class="hljs-keyword">break</span>
+   }
+
+ }).listen( <span class="hljs-number">8000</span>, <span class="hljs-string">'localhost'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+   <span class="hljs-built_in">console</span>.log( <span class="hljs-string">'服务器运行在： http://localhost:8000'</span> )
+ })
+</code></pre>
+<h1 id="五、静态资源服务"><a name="五、静态资源服务" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#%E4%BA%94%E3%80%81%E9%9D%99%E6%80%81%E8%B5%84%E6%BA%90%E6%9C%8D%E5%8A%A1"><i class="fa fa-link" aria-hidden="true"></i></a><a name="五、静态资源服务" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#%E4%BA%94%E3%80%81%E9%9D%99%E6%80%81%E8%B5%84%E6%BA%90%E6%9C%8D%E5%8A%A1"><i class="fa fa-link" aria-hidden="true"></i></a>五、静态资源服务</h1>
+<h3 id="51-readstaticfile"><a name="51-readstaticfile" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#51-readstaticfile"><i class="fa fa-link" aria-hidden="true"></i></a><a name="51-readstaticfile" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#51-readstaticfile"><i class="fa fa-link" aria-hidden="true"></i></a>5.1 readStaticFile</h3>
+<p>/modules/readStaticFile.js</p>
+<pre><code class="lang-js"><span class="hljs-comment">// 引入依赖的模块</span>
+<span class="hljs-keyword">var</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">'path'</span>)
+<span class="hljs-keyword">var</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">'fs'</span>)
+<span class="hljs-keyword">var</span> mime = <span class="hljs-built_in">require</span>(<span class="hljs-string">'mime'</span>)
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">readStaticFile</span>(<span class="hljs-params">res, filePathname</span>) </span>{
+
+  <span class="hljs-keyword">var</span> ext = path.parse(filePathname).ext
+  <span class="hljs-keyword">var</span> mimeType = mime.getType(ext)
+
+  <span class="hljs-comment">// 判断路径是否有后缀, 有的话则说明客户端要请求的是一个文件 </span>
+  <span class="hljs-keyword">if</span> (ext) {
+    <span class="hljs-comment">// 根据传入的目标文件路径来读取对应文件</span>
+    fs.readFile(filePathname, (err, data) =&gt; {
+    <span class="hljs-comment">// 错误处理</span>
+      <span class="hljs-keyword">if</span> (err) {
+        res.writeHead(<span class="hljs-number">404</span>, { <span class="hljs-string">"Content-Type"</span>: <span class="hljs-string">"text/plain"</span> })
+        res.write(<span class="hljs-string">"404 - NOT FOUND"</span>)
+        res.end()
+      } <span class="hljs-keyword">else</span> {
+        res.writeHead(<span class="hljs-number">200</span>, { <span class="hljs-string">"Content-Type"</span>: mimeType })
+        res.write(data)
+        res.end()
+      }
+    });
+    <span class="hljs-comment">// 返回 true 表示, 客户端想要的 是 静态文件</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>
+  } <span class="hljs-keyword">else</span> {
+    <span class="hljs-comment">// 返回 false 表示, 客户端想要的 不是 静态文件</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>
+  }
+}
+
+<span class="hljs-comment">// 导出函数</span>
+<span class="hljs-built_in">module</span>.exports = readStaticFile
+</code></pre>
+<h3 id="52-server"><a name="52-server" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#52-server"><i class="fa fa-link" aria-hidden="true"></i></a><a name="52-server" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#52-server"><i class="fa fa-link" aria-hidden="true"></i></a>5.2 server</h3>
+<p>/server.js </p>
+<pre><code class="lang-js"><span class="hljs-comment">// 引入相关模块</span>
+<span class="hljs-keyword">var</span> http = <span class="hljs-built_in">require</span>(<span class="hljs-string">'http'</span>);
+<span class="hljs-keyword">var</span> url = <span class="hljs-built_in">require</span>(<span class="hljs-string">'url'</span>);
+<span class="hljs-keyword">var</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">'path'</span>);
+<span class="hljs-keyword">var</span> readStaticFile = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./modules/readStaticFile'</span>);
+
+<span class="hljs-comment">// 搭建 HTTP 服务器</span>
+<span class="hljs-keyword">var</span> server = http.createServer(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">req, res</span>) </span>{
+  <span class="hljs-keyword">var</span> urlObj = url.parse(req.url);
+  <span class="hljs-keyword">var</span> urlPathname = urlObj.pathname;
+  <span class="hljs-keyword">var</span> filePathname = path.join(__dirname, <span class="hljs-string">"/public"</span>, urlPathname);
+
+  <span class="hljs-comment">// 读取静态文件</span>
+  readStaticFile(res, filePathname);
+});
+
+<span class="hljs-comment">// 在 3000 端口监听请求</span>
+server.listen(<span class="hljs-number">3000</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"服务器运行中."</span>);
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"正在监听 3000 端口:"</span>)
+})
+</code></pre>
+<h3 id="53-最终目录结构"><a name="53-最终目录结构" class="anchor-navigation-ex-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#53-%E6%9C%80%E7%BB%88%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84"><i class="fa fa-link" aria-hidden="true"></i></a><a name="53-最终目录结构" class="plugin-anchor" href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html#53-%E6%9C%80%E7%BB%88%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84"><i class="fa fa-link" aria-hidden="true"></i></a>5.3 最终目录结构</h3>
+<p><img src="./基础 · 千锋大前端小册-GP19-Node.js_files/dir.jpg" width="300"></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class="search-results-count"></span> results matching "<span class="search-query"></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class="search-query"></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/" class="navigation navigation-prev " aria-label="Previous page: 前言">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="https://lurongtao.gitee.io/felixbooks-gp19-node.js/basics/01-Node.js%E5%9F%BA%E7%A1%80.html" class="navigation navigation-next " aria-label="Next page: 01-Node.js基础" style="margin-right: 17px;">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"基础","level":"1.2","depth":1,"next":{"title":"01-Node.js基础","level":"1.2.1","depth":2,"path":"basics/01-Node.js基础.md","ref":"./basics/01-Node.js基础.md","articles":[]},"previous":{"title":"前言","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","expandable-chapters-small","anchors","github","github-buttons","sharing-plus","anchor-navigation-ex","favicon","insert-logo"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"github":{"url":"https://gitee.com/lurongtao/felixbooks-gp19-Node.js"},"splitter":{},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"favicon":{"shortcut":"./source/images/favicon.jpg","bookmark":"./source/images/favicon.jpg","appleTouch":"./source/images/apple-touch-icon.jpg","appleTouchMore":{"120x120":"./source/images/apple-touch-icon.jpg","180x180":"./source/images/apple-touch-icon.jpg"}},"github-buttons":{"buttons":[{"user":"lurongtao","repo":"felixbooks-kbone","type":"star","size":"small","count":true}]},"expandable-chapters-small":{},"sharing":{"qq":false,"all":["google","facebook","weibo","twitter","qq","qzone","linkedin","pocket"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"insert-logo":{"url":"/felixbooks-gp19-node.js/images/node.js.jpg","style":"background: skyblue; width: 100%; height: 100%;"}},"theme":"default","author":"古艺散人","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"千锋大前端小册-GP19-Node.js","language":"zh-hans","links":{},"gitbook":"3.2.3","description":"Node.js复习"},"file":{"path":"basics/01-Node.js基础.md","mtime":"2020-06-26T01:24:23.857Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-26T23:58:23.735Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="./基础 · 千锋大前端小册-GP19-Node.js_files/gitbook.js.下载"></script>
+    <script src="./基础 · 千锋大前端小册-GP19-Node.js_files/theme.js.下载"></script>
+    
+        
+        <script src="./基础 · 千锋大前端小册-GP19-Node.js_files/splitter.js.下载"></script>
+        
+    
+        
+        <script src="./基础 · 千锋大前端小册-GP19-Node.js_files/expandable-chapters-small.js.下载"></script>
+        
+    
+        
+        <script src="./基础 · 千锋大前端小册-GP19-Node.js_files/plugin.js.下载"></script>
+        
+    
+        
+        <script src="./基础 · 千锋大前端小册-GP19-Node.js_files/plugin.js(1).下载"></script>
+        
+    
+        
+        <script src="./基础 · 千锋大前端小册-GP19-Node.js_files/buttons.js.下载"></script>
+        
+    
+        
+        <script src="./基础 · 千锋大前端小册-GP19-Node.js_files/plugin.js(2).下载"></script>
+        
+    
+        
+        <script src="./基础 · 千锋大前端小册-GP19-Node.js_files/search-engine.js.下载"></script>
+        
+    
+        
+        <script src="./基础 · 千锋大前端小册-GP19-Node.js_files/search.js.下载"></script>
+        
+    
+        
+        <script src="./基础 · 千锋大前端小册-GP19-Node.js_files/lunr.min.js.下载"></script>
+        
+    
+        
+        <script src="./基础 · 千锋大前端小册-GP19-Node.js_files/search-lunr.js.下载"></script>
+        
+    
+        
+        <script src="./基础 · 千锋大前端小册-GP19-Node.js_files/fontsettings.js.下载"></script>
+        
+    
+
+    
+
+
+</body></html>
